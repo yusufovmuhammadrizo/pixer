@@ -1,0 +1,274 @@
+* {
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	width: 1300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Navigation bar */
+
+.site-nav {
+	display: flex;
+	position: sticky;
+	top: 0;
+	width: 1920px;
+	height: 56px;
+	padding: 0 20px;
+	align-items: center;
+	justify-content: space-around;
+	box-shadow: 0 4px 20px 0 rgba(0,0,0,0.1);
+	background-color: #fff;
+}
+
+.site-logo-link {
+	opacity: 1;
+}
+
+.site-logo-link:hover {
+	opacity: 0.8;
+}
+
+.site-logo-link:active {
+	opacity: 0.4;
+}
+
+.site-nav-list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	list-style-type: none;	
+	padding: 0;
+	margin: 0;
+	width: 700px;
+}
+
+.site-nav-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 15px;
+	height: 55px;
+	cursor: pointer;
+	transition: box-shadow 0.3s ease;
+}
+
+.xizmatlar {
+	display: flex;
+	position: relative;
+	flex-direction: column;
+} 
+
+.site-nav-item:hover,
+.site-nav-item.active {
+	box-shadow: inset 1px -5px 0px -2px black;
+}
+
+.site-nav-item:active {
+	background-color: rgba(25, 25, 25, 0.7);
+}
+
+.site-nav-item:active a {
+	color: white;
+}
+
+.site-nav-list a {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 24px;
+	color: black;
+	cursor: pointer;
+}
+
+.site-nav-tel-link {
+	background-color: #00BAFC;
+	border-radius: 5px;
+	border: 3px solid #00BAFC;
+	padding: 5px 13px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.site-nav-tel-link:hover {
+	background-color: #fff;
+}
+
+.site-nav-tel-link:active {
+	background-color: rgba(0, 186, 252, 0.6);
+	border: 3px solid rgba(0, 186, 252, 0.6);
+}
+
+.site-nav-tel-link:hover a {
+	color: #00BAFC;
+}
+
+.site-nav-tel-link:active a {
+	color: #fff;
+}
+
+.site-nav-tel-link a {
+	font-style: normal;
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 24px;
+	color: white;
+}
+
+.site-nav-drop-down-menu {
+	display: none;
+	position: absolute;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+	top: 100%;
+	width: 124px;
+	height: 216px;
+	list-style-type: none;
+	box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+	overflow: hidden;
+	background-color: #fff;
+}
+
+.xizmatlar:hover .site-nav-drop-down-menu {
+	display: flex;
+}
+
+.site-nav-drop-down-item {
+	margin: 0;
+	padding-left: 13px;
+	display: flex;
+	align-items: center;
+	width: 124px;
+	flex-grow: 1;
+	transition: background-color 0.3s ease;
+	z-index: 11;
+}
+
+.site-nav-drop-down-item a {
+	font-size: 16px;
+	line-height: 24px;
+	transition: color 0.3s ease;
+}
+
+.site-nav-drop-down-item:hover {
+	background-color: #00BAFC;
+}
+
+.site-nav-drop-down-item:active {
+	opacity: 0.6;
+}
+
+.site-nav-drop-down-item:hover a {
+	color: white;
+}
+
+/* Header */
+
+.site-header {
+	display: flex;
+	margin-top: 70px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.site-header iframe {
+	border-radius: 5px;
+}
+
+.header-item {
+	display: flex;
+	flex-direction: column;
+}
+
+.header-item-heading {
+	width: 510px;
+}
+
+.header-item-text {
+	width: 465px;
+}
+
+.header-item-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #00BAFC;
+	width: 230px;
+	height: 40px;
+	border-radius: 5px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.header-item-button:hover {
+	background-color: rgba(0, 186, 252, 0.8);
+}
+
+.header-item-button:active {
+	background-color: rgba(0, 186, 252, 0.6);
+}
+
+/* Xizmatlar section */
+
+.xizmatlar-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.xizmatlar-heading {
+	font-size: 24px;
+	/* line-height: 130%; */
+	text-align: center;
+}
+
+.xizmatlar-text {
+	width: 719px;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+	margin: 16px 0;
+}
+
+.xizmatlar-list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+	width: 1180px;
+	height: 580px;
+	flex-wrap: wrap;
+	list-style-type: none;
+	/* border: 1px solid red; */
+}
+
+.xizmatlar-list-item {
+	margin: 0 35px;
+	padding: 0;
+	width: 320px;
+	height: 260px;
+	padding: 24px;
+	box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);	
+	border-radius: 5px;
+}
